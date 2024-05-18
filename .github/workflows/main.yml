@@ -12,6 +12,7 @@ on:
           - 'JP'
           - 'KR'
           - 'TW'
+          - 'bi'
 
 
 jobs:
@@ -64,6 +65,9 @@ jobs:
           "TW")
             echo "BUNDLE_ID=com.hkmanjuu.azurlane.gp" >> $GITHUB_ENV
             ;;
+          "bi")
+            echo "com.bilibili.azurlane >> $GITHUB_ENV
+            ;; 
           esac
         shell: bash
 
